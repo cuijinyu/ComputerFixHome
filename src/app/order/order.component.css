@@ -1,0 +1,64 @@
+@keyframes picture {
+  0%{
+    opacity: 0;
+    transform:scale(2,2);
+  }
+  50%{
+    opacity: 0.5;
+    transform: scale(1.5,1.5);
+  }
+  80%
+  {
+    opacity: 0.8;
+    transform: scale(1.2,1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1,1);
+  }
+}
+@keyframes title {
+  0%{
+      position: relative;
+    top: 20px;
+    opacity: 0;
+  }
+  30%
+  {
+    position: relative;
+    top: 14px;
+    opacity: 0.4;
+  }
+  50%{
+    position: relative;
+    top: 10px;
+    opacity: 0.5;
+  }
+  80%
+  {
+    position: relative;
+    top: 5px;
+    opacity: 0.8;
+  }
+  100%{
+    position:relative;
+    opacity: 1;
+  }
+}
+img
+{
+  animation: picture;
+  -webkit-animation: picture;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+h1
+{
+  animation: title;
+  -webkit-animation: title;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+label{
+  font-size: 20px;
+}

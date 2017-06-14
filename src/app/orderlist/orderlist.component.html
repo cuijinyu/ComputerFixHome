@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-hover">
+      <tr>
+        <th>姓名</th>
+        <th>学院</th>
+        <th>年级</th>
+        <th>手机号码</th>
+        <th>QQ</th>
+        <th>问题</th>
+      </tr>
+      <tr *ngFor="let i of OrderList">
+        <td>{{i.name}}</td>
+        <td>{{i.School}}</td>
+        <td>{{i.Class}}</td>
+        <td>{{i.phone}}</td>
+        <td>{{i.QQ}}</td>
+        <td>{{i.Question}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

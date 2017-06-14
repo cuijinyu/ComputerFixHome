@@ -1,0 +1,36 @@
+app-introduction
+{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+nav
+{
+  margin-bottom: 0px;
+}
+ul{
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.ftmy
+{
+  text-decoration: none;
+  list-style: none;
+}
+.ftmy a{
+  text-decoration: none;
+  color:white;
+}
+footer p{
+  color: white;
+}
+footer
+{
+  background-color: lightslategray;
+  height: 200px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+}
+a:hover
+{
+  color: lightslategray;
+}

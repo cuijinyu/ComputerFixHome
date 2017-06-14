@@ -1,0 +1,5 @@
+<div class="list-group problemlist">
+      <a [routerLink]="['/find',i.id]" class="list-group-item" *ngFor="let i of problems" [class.active]="i.id==problemId" (click)="findTheProblem($event)">
+        {{i.id}}、{{i.problemname}}
+      </a>
+</div>

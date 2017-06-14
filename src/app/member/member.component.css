@@ -1,0 +1,179 @@
+.row
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@keyframes big{
+  0%{
+    transform: scale(0,0);
+    -ms-transform: scale(0,0);	/* IE 9 */
+    -webkit-transform: scale(0,0);	/* Safari 和 Chrome */
+    -o-transform: scale(0,0);	/* Opera */
+    -moz-transform: scale(0,9);	/* Firefox */
+    opacity: 0;
+  }
+  50%{
+    transform: scale(2,2);
+    -ms-transform: scale(2,2);	/* IE 9 */
+    -webkit-transform: scale(2,2);	/* Safari 和 Chrome */
+    -o-transform: scale(2,2);	/* Opera */
+    -moz-transform: scale(2,2);	/* Firefox */
+    opacity: 0.8;
+  }
+  50%{
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);	/* IE 9 */
+    -webkit-transform: scale(1,1);	/* Safari 和 Chrome */
+    -o-transform: scale(1,1);	/* Opera */
+    -moz-transform: scale(1,1);	/* Firefox */
+    opacity: 1;
+  }
+}
+.dis1 img
+{
+  animation:big 2s;
+  -moz-animation: big 2s;	/* Firefox */
+  -webkit-animation: big 2s;	/* Safari 和 Chrome */
+  -o-animation: big 2s;	/* Opera */
+}
+.dis2 img
+{
+  animation:big 2.2s;
+  -moz-animation: big 2.2s;	/* Firefox */
+  -webkit-animation: big 2.2s;	/* Safari 和 Chrome */
+  -o-animation: big 2.2s;	/* Opera */
+}
+.dis3 img
+{
+  animation:big 2.4s;
+  -moz-animation: big 2.4s;	/* Firefox */
+  -webkit-animation: big 2.4s;	/* Safari 和 Chrome */
+  -o-animation: big 2.4s;	/* Opera */
+}
+.dis4 img
+{
+  animation:big 2.6s;
+  -moz-animation: big 2.6s;	/* Firefox */
+  -webkit-animation: big 2.6s;	/* Safari 和 Chrome */
+  -o-animation: big 2.6s;	/* Opera */
+}
+.dis5 img
+{
+  animation:big 2.8s;
+  -moz-animation: big 2.8s;	/* Firefox */
+  -webkit-animation: big 2.8s;	/* Safari 和 Chrome */
+  -o-animation: big 2.8s;	/* Opera */
+}
+.dis6 img
+{
+  animation:big 3s;
+  -moz-animation: big 3s;	/* Firefox */
+  -webkit-animation: big 3s;	/* Safari 和 Chrome */
+  -o-animation: big 3s;	/* Opera */
+}
+
+.dis7 img
+{
+  animation:big 3.2s;
+  -moz-animation: big 3.2s;	/* Firefox */
+  -webkit-animation: big 3.2s;	/* Safari 和 Chrome */
+  -o-animation: big 3.2s;	/* Opera */
+}
+.dis8 img
+{
+  animation:big 3.4s;
+  -moz-animation: big 3.4s;	/* Firefox */
+  -webkit-animation: big 3.4s;	/* Safari 和 Chrome */
+  -o-animation: big 3.4s;	/* Opera */
+}
+.dis9 img
+{
+  animation:big 3.6s;
+  -moz-animation: big 3.6s;	/* Firefox */
+  -webkit-animation: big 3.6s;	/* Safari 和 Chrome */
+  -o-animation: big 3.6s;	/* Opera */
+}
+.dis10 img
+{
+  animation:big 3.8s;
+  -moz-animation: big 3.8s;	/* Firefox */
+  -webkit-animation: big 3.8s;	/* Safari 和 Chrome */
+  -o-animation: big 3.8s;	/* Opera */
+}
+.dis11 img
+{
+  animation:big 4s;
+  -moz-animation: big 4s;	/* Firefox */
+  -webkit-animation: big 4s;	/* Safari 和 Chrome */
+  -o-animation: big 4s;	/* Opera */
+}
+.dis12 img
+{
+  animation:big 4.2s;
+  -moz-animation: big 4.2s;	/* Firefox */
+  -webkit-animation: big 4.2s;	/* Safari 和 Chrome */
+  -o-animation: big 4.2s;	/* Opera */
+}
+.dis13 img
+{
+  animation:big 4.4s;
+  -moz-animation: big 4.4s;	/* Firefox */
+  -webkit-animation: big 4.4s;	/* Safari 和 Chrome */
+  -o-animation: big 4.4s;	/* Opera */
+}
+.dis14 img
+{
+  animation:big 4.6s;
+  -moz-animation: big 4.6s;	/* Firefox */
+  -webkit-animation: big 4.6s;	/* Safari 和 Chrome */
+  -o-animation: big 4.6s;	/* Opera */
+}
+.dis15 img
+{
+  animation:big 4.8s;
+  -moz-animation: big 4.8s;	/* Firefox */
+  -webkit-animation: big 4.8s;	/* Safari 和 Chrome */
+  -o-animation: big 4.8s;	/* Opera */
+}
+.dis16 img
+{
+  animation:big 5s;
+  -moz-animation: big 5s;	/* Firefox */
+  -webkit-animation: big 5s;	/* Safari 和 Chrome */
+  -o-animation: big 5s;	/* Opera */
+}
+.dis17 img
+{
+  animation:big 5.2s;
+  -moz-animation: big 5.2s;	/* Firefox */
+  -webkit-animation: big 5.2s;	/* Safari 和 Chrome */
+  -o-animation: big 5.2s;	/* Opera */
+}
+img
+{
+  width: 120px;
+  height:120px;
+}
+img:hover
+{
+  transition:hover 1s;
+  -webkit-animation:hover 1s;
+}
+@keyframes hover {
+  0%{
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.3,1.3);
+    -webkit-transform: scale(1.3,1.3);
+  }
+  100%
+  {
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+  }
+}
+.desc{
+  height: 200px;
+}

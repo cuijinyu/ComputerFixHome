@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">请如实填写您的信息哦，方便我们和您进行联系</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 text-center">
+    <img src="./images/小鸡.png" alt="">
+    <h3>请认真填写哦</h3>
+    <img src="./images/鲸鱼.png" alt="">
+    <h3>不然计科的小哥哥小姐姐联系不到你们呢</h3>
+  </div>
+  <div class="col-md-4">
+    <div class="col-md-12">
+      <form  action="/order" method="post"  [formGroup]="formModuel" (submit)="onSubmit()">
+          <label for="name">您的姓名</label>
+          <input type="text" class="form-control" id="name" placeholder="小李" formControlName="name">
+          <div class="alert alert-danger" role="alert" *ngIf="formErrors.name">{{formErrors.name}}</div>
+          <label for="phonenumber">电话号码</label>
+          <input type="text" class="form-control" id="phonenumber" placeholder="155********" formControlName="phone">
+          <div class="alert alert-danger" role="alert" *ngIf="formErrors.phone">{{formErrors.phone}}</div>
+        <div class="form-group">
+          <label for="school">请选择您的学院</label>
+          <select class="form-control" id="school" formControlName="School">
+          <option value="计算机与信息技术学院">计算机与信息技术学院</option>
+          <option value="文学院">文学院</option>
+          <option value="历史文化学院">历史文化学院</option>
+          <option value="哲学社会学学院">哲学社会学学院</option>
+          <option value="外国语学院">外国语学院</option>
+          <option value="音乐学院">音乐学院</option>
+          <option value="美术学院">美术学院</option>
+          <option value="政治与公共管理学院">政治与公共管理学院</option>
+          <option value="教育科学学院">教育科学学院</option>
+          <option value="经济与管理学院">经济与管理学院</option>
+          <option value="法学院">法学院</option>
+          <option value="体育学院">体育学院</option>
+          <option value="数学科学学院">数学科学学院</option>
+          <option value="物理电子工程学院">物理电子工程学院</option>
+          <option value="化学化工学院">化学化工学院</option>
+          <option value="生命科学学院">生命科学学院</option>
+          <option value="环境与资源学院">环境与资源学院</option>
+          <option value="初民学院">初民学院</option>
+          </select>
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="formErrors.School">{{formErrors.School}}</div>
+        <div class="form-group">
+          <label for="class">请选择您的年级</label>
+          <select class="form-control" name="class" id="class" formControlName="Class">
+            <option value="2016">2016级</option>
+            <option value="2015">2015级</option>
+            <option value="2014">2014级</option>
+            <option value="2013">2013级</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="qq">您的QQ号码</label>
+          <input type="text" class="form-control" id="qq" placeholder="123456789" formControlName="QQ">
+          <div class="alert alert-danger" role="alert" *ngIf="formErrors.QQ">{{formErrors.QQ}}</div>
+        </div>
+        <div class="form-group">
+          <label for="question">您遇到的问题</label>
+          <input type="text" class="form-control" id="question" placeholder="啊哈，说说你碰到的问题，说出来我们之间就有故事" formControlName="Question">
+          <div class="alert alert-danger" role="alert" *ngIf="formErrors.Question">{{formErrors.Question}}</div>
+        </div>
+        <button type="submit" class="btn btn-info">提交信息</button>
+      </form>
+      <div class="alert alert-success" [hidden]="!isPost">
+        <span class="glyphicon glyphicon-ok"></span>
+        <p>{{postValue}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 text-center">
+    <img src="./images/老虎.png" alt="">
+    <h3>劳动不易呢，希望大家可以理解我们的小哥哥小姐姐哦！</h3>
+    <img src="./images/狮子.png" alt="">
+    <h3>希望方便大家的生活哦</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">我们的工作人员将会尽快与您联系</div>
+  </div>
+</div>

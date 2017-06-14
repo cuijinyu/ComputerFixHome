@@ -1,0 +1,25 @@
+<div *ngFor="let question of Questions">
+  <div class="row" *ngIf="question.id===QuestionNumber">
+    <div class="col-md-12">
+      <div class="page-header">
+        <h2>{{question.id}}、<small>{{question.title}}</small></h2>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h3>{{question.answers[0]}}</h3>
+      <h3>{{question.answers[1]}}</h3>
+      <h3>{{question.answers[2]}}</h3>
+      <h3>{{question.answers[3]}}</h3>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-default" (click)="previousQuestion()"><span class="glyphicon glyphicon-chevron-left"></span>上一题</button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-default" (click)="answerIt()"><span class="glyphicon glyphicon-paperclip"></span>查看答案</button>
+      <p [hidden]="answer">{{question.rightAnswer}}</p>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-default" (click)="nextQuestion()">下一题<span class="glyphicon glyphicon-chevron-right"></span></button>
+    </div>
+  </div>
+</div>

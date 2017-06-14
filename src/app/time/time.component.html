@@ -1,0 +1,10 @@
+<div class="panel panel-default">
+  <div class="panel-heading">计时器</div>
+  <div class="panel-body">
+    剩余<strong class="bigTime">{{time}}</strong>秒
+  </div>
+  <button (click)="mustReady()" class="btn btn-info"><span class="glyphicon glyphicon-time"></span>必答题计时器开始</button>
+  <button (click)="quickReady()" class="btn btn-info"><span class="glyphicon glyphicon-time"></span>抢答题计时器开始</button>
+  <button (click)="mustReadyStop()" class="btn btn-danger"><span class="glyphicon glyphicon-off"></span>停止计时</button>
+  <button (click)="reset()" class="btn btn-danger"><span class="glyphicon glyphicon-repeat"></span>重置</button>
+</div>

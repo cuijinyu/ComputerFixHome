@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-12">
+    <p class="bg-primary">添加新的问题</p>
+    <form [formGroup]="formModuel"  (submit)="submit()">
+      <div class="form-group">
+        <label for="problem">问题名称</label>
+        <input type="text" class="form-control" id="problem" formControlName="problemname">
+      </div>
+      <div class="form-group">
+        <label for="solveway">解决方案</label>
+        <input type="text" class="form-control" id="solveway" formControlName="solveway">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="row problemlist">
+  <div class="col-md-12">
+    <p class="bg-info">问题列表</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-md-12">
+      <table class="table table-hover table-bordered text-center">
+        <tr class="text-center">
+          <th class="text-center">编号</th>
+          <th class="text-center">问题名称</th>
+          <th class="text-center">解决方案</th>
+          <th class="text-center">操作</th>
+        </tr>
+        <tr *ngFor="let i of problems">
+          <td class="text-center">{{i.id}}</td>
+          <td class="text-center">{{i.problemname}}</td>
+          <td class="text-center">{{i.solveway}}</td>
+          <td class="text-center"><button type="button" class="btn btn-danger"(click)="delete(i)">删除</button></td>
+        </tr>
+      </table>
+  </div>
+</div>

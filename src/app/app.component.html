@@ -1,3 +1,73 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">义疗小屋</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" routerLink="">返回首页</a></li>
+        <li><a href="" routerLink="/login">管理界面</a></li>
+        <li><a href="#" routerLink="/order">预约义疗</a></li>
+        <li><a href="#" routerLink="/knowledge">知识竞赛</a></li>
+        <li><a href="#" routerLink="/find">问题自查</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于我们<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"  data-toggle="modal" data-target="#about">关于计科电脑义疗服务中心</a></li>
+            <li><a href="#" routerLink="/member">成员 </a></li>
+            <li><a href="#" routerLink="/join">加入我们</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" routerLink="/donate">辛苦咯，赏个饼子</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<router-outlet></router-outlet>
+<footer>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="text-center ftmy">
+        <li><a href="" routerLink="/aboutme">关于我</a></li>
+        <li><a href="http://www.github.com/cuijinyu">Github</a></li>
+        <li><a href="http://cuijinyu.github.io">个人空间</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <p class="text-center">©2017 <br>
+        Powered By Angular4 <br>Cuijinyu</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">关于计科电脑义疗服务中心</h4>
+      </div>
+      <div class="modal-body">
+        计科电脑义疗服务中心是隶属于计算机与信息技术学院团委学生会的部门，旨在为同学们提供电脑上的技术支持，我们的宗旨是：您有问题，我来解决！
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
